@@ -1,0 +1,3 @@
+#shell
+
+Yum.repos.d
