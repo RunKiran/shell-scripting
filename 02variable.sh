@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "enter username:"
-echo "enter password:"
+echo "enter username::"
+echo "enter password::"
