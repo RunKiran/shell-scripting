@@ -1,6 +1,6 @@
 #!/bin/bash
 today=wensday
-if (today==sunday){ 
+if(today==sunday){  
     print enjoy the holiday
     }
     
