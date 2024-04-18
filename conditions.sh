@@ -1,9 +1,9 @@
 #!/bin/bash
-today=wensday
-if(today==sunday){  
-    print enjoy the holiday
+NUMBER=5
+if(NUMBER>5){  
+    print "Given number is graterthan 10" 
     }
     
 else {
-    echo "today holiday enjoy"    
+    print  "Given number is lessthan 10"    
 }
