@@ -1,6 +1,6 @@
 #!/bin/bash
-NUMBER=5
-if(NUMBER>5){
+NUMBER=$1
+if($NUMBER>10){
     print "Given number is graterthan 10" 
     }
     
