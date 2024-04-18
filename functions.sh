@@ -22,8 +22,8 @@ Validation(){
     fi
 }
 
-dnf install mysqll -y
-Validation $?  "installation of mysqll"
+dnf install mysql -y
+Validation $?  "installation of mysql"
 
 
 
