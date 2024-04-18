@@ -1,10 +1,9 @@
 #!/bin/bash
-today=sunday
-if (today==wensday){ 
-    echo "go to school"
-    exit1
-
-}
+today=wensday
+if (today==sunday){ 
+    print enjoy the holiday
+    }
     
-else 
+else {
     echo "today holiday enjoy"    
+}
