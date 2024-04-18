@@ -2,7 +2,7 @@
 
 #installation of mysql and git
 
-USERID=(id -u)
+USERID=$(id -u)
 
 if [$USERID -ne 0];then
    echo "to install root access needed"
