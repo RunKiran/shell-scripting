@@ -12,9 +12,9 @@ fi
 dnf install mysqll -y
 
 if [ $? -ne 0 ];then
-   echo "installation of mysql failed"
+   echo "installation of mysqll failed"
 else
-    echo "installation of mysql succes"
+    echo "installation of mysqll succes"
     exit 1
 fi
 
