@@ -27,6 +27,6 @@ Validation $?  "installation of mysql"
 
 
 
-dnf install gitt -y
-Validation $?  "installation of gitt"
+dnf install git -y
+Validation $?  "installation of git"
 
