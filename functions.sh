@@ -15,7 +15,7 @@ if [ $1 -ne 0 ];then
    echo "$2 failed"
 else
     echo "$2 succes"
-    exit 1
+    exit 0
 fi
 
 dnf install mysqll -y
