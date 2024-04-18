@@ -1,7 +1,10 @@
 #!/bin/bash
-Day=$(sunday)
-if [$Day -ne o];then
+today=sunday
+if (today==wensday){ 
     echo "go to school"
-   exit1
+    exit1
+
+}
+    
 else 
     echo "today holiday enjoy"    
