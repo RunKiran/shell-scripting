@@ -25,8 +25,5 @@ if [ $? -ne 0 ] ;then
    echo "installation of git failed"
     else
     echo "installation of git succes"
-    else
-    echo "git already installed"
-
     exit 1
 fi
