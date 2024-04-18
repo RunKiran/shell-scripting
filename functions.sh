@@ -23,10 +23,10 @@ Validation(){
 }
 
 dnf install mysqll -y
-Validation $0  "installation of mysqll"
+Validation $?  "installation of mysqll"
 
 
 
 dnf install gitt -y
-Validation $0  "installation of gitt"
+Validation $?  "installation of gitt"
 
