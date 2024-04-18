@@ -7,3 +7,7 @@ if(NUMBER>5){
 else {
     print  "Given number is lessthan 10"    
 }
+
+else {  
+    print "given number equal to 5"
+}
