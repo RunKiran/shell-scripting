@@ -13,7 +13,7 @@ dnf install mysqll -y
 
 if [ $? -ne 0 ];then
    echo "installation of mysql failed"
-    else
+else
     echo "installation of mysql succes"
     exit 1
 fi
@@ -23,7 +23,7 @@ dnf install git -y
 
 if [ $? -ne 0 ] ;then
    echo "installation of git failed"
-    else
+else
     echo "installation of git succes"
     exit 1
 fi
