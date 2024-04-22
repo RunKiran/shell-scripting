@@ -8,8 +8,8 @@ Scriptname=$(echo $0 | cut -d "." -f1)
 Log_file=/tmp/$Scriptname-$TIME_STAMP.log
 echo "script started excuting at: $TIME_STAMP"
 
-R="\e[32m"
-G="\e[33m"
+R="\e[31m"
+G="\e[32m"
 N="\e[0m"
 
 if [ $USERID -ne 0 ]
