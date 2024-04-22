@@ -28,7 +28,7 @@ Validation(){
     fi
 }
 
-dnf install mysql -y &>>$Log_file
+dnf install mysqll -y &>>$Log_file
 Validation $?  "installation of mysql"
 
 
