@@ -6,6 +6,7 @@ USERID=$(id -u)
 TIME_STAMP=$(date +%F-%H-%M-%S)
 Scriptname=$(echo $0 | cut -d "." -f1)
 Log_file=/tmp/$Scriptname-$TIME_STAMP.log
+echo "script started excuting at: $TIME_STAMP"
 
 R="\e[32m"
 G="\e[33m"
@@ -19,10 +20,10 @@ fi
 Validation(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 failed"
+        echo -e "$2...$R failed $N"
         exit 1
     else
-        echo "$2 succes"
+        echo -e "$2..$G succes $N"
 
     fi
 }
