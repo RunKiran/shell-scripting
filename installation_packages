@@ -24,10 +24,10 @@ VALIDATE(){
 for i in $@
 
 do
-    echo "packages to install...$i"
-    dnf installed $i &>>LOGFILE
+    echo "packages to install:$i"
+    dnf list installed $i &>>LOGFILE
     if [ $? -eq 0 ]
-     then
+    then
         echo -e "$i already installed...$Y SKIPPING $N"
     else
         dnf install $i -y &>>$LOGFILE
