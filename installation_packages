@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#installation of more packages with single command ...looping process
+
+USERID=$(id -u)
+TIME_STAMP=$(date +%F-%H-%M-%S)
+Script_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
+Validate(){
+    if [USERID -ne 0];then
+        echo "root access needed to excute this"
+    else
+        echo "you are super user"  
+     exit 1
+    fi      
+}
+
+for i in $@
+
+do
+    echo "packages to install...$i"
+    dnf installed $i &>>LOGFILE
+    if [$? -eq 0]
+     then
+        echo -e "$i already installed...$Y SKIPPING $N"
+    else
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "Installation of $i"
+    fi
+done
