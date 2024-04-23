@@ -12,11 +12,12 @@ Y="\e[33m"
 N="\e[0m"
 
 Validate(){
-    if [ $USERID -ne 0];then
-        echo "root access needed to excute this"
+    if [ $USERID -ne 0 ]
+        then
+            echo "root access needed to excute this"
     else
         echo "you are super user"  
-     exit 1
+    exit 1
     fi      
 }
 
