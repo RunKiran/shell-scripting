@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=
+SOURCE_DIR=/app/log
 if [ -d $SOURCE_DIR ]
 then
     echo "source dir exsists"
