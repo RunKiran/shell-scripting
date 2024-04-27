@@ -1,25 +1,24 @@
 #!/bin/bash
 
-SOURCE_DIR=/app/log/as
+SOURCE_DIRECTORY=/app/logs
 
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-if [ -d $SOURCE_DIR ]
+
+if [ -d $SOURCE_DIRECTORY ]
 then
-    echo "source dir exsists"
+    echo -e "$G Source directory exists $N"
 else
-    echo "Please make sure $SOURCE_DIR exsists"
+    echo -e "$R Please make sure $SOURCE_DIRECTORY exists $N"
     exit 1
 fi
-files=$(find $SOURCE_DIR -name "*.log" -mtime +14)
-echo "files to be delete $files"
+
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
 while IFS= read -r line
 do
-
-    echo "deleting files: $line"
+    echo "Deleting file: $line"
     rm -rf $line
-
-done<<< $files
+done <<< $FILES
