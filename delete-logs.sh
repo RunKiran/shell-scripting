@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIR=/app/log
+SOURCE_DIR=/app/
 
 R="\e[31m"
 G="\e[32m"
