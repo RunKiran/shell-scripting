@@ -28,5 +28,5 @@ while IFS= read -r line
 do
     echo "zipping file: $line"
     gzip $line
-    mv $line $Destination_DIR
+    mv $FILES $Destination_DIR
 done <<< $FILES
