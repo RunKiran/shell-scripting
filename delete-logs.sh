@@ -17,4 +17,4 @@ do
     echo "deleting files: $line"
     rm -rf $line
 
-done<<<$files
+done<<< $files
